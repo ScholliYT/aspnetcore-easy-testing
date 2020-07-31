@@ -168,7 +168,7 @@ We can do fake authentication handler easily through call few method.
 But It's not recommended for custom complex implementation of authentication process.
 
 ```cs
-usnig var sut = new SystemUnderTest<Startup>();
+using var sut = new SystemUnderTest<Startup>();
 
 // this replace disable defualt original authentication handler with fake authentication handler  
 var httpClient = sut.NoUserAuthentication()
